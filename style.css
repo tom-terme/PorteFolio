@@ -1,3 +1,226 @@
-h1{
-    color: red;
+/*Utiliser ces 3 propriétés pour réinitialiser les marges et paddings par défaut du document */
+* {
+  padding: 0;
+  margin: 0;
+  /*box-sizing :Permet de ne pas agrandir un element lorsque l'on rajoute du padding*/
+  box-sizing:border-box;
+}
+body{
+  font-family: sans-serif;
+}
+header {
+  padding-left: 16px;
+  padding-right: 64px;
+}
+
+header nav a {
+  /*header nav a => les lien dans la nav du header */
+  margin-left: 0px;
+  margin-right: 8px;
+}
+
+/*Changement de la couleur au survol*/
+header nav a:hover {
+  color: #17431C
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+}
+/*---------------------------------
+        Systeme de flexbox
+-------------------------------*/
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+/* largeur des enfants - flexbox */
+.largeur60 {
+  width: 60%;
+}
+
+.largeur30 {
+  width: 30%;
+}
+
+.largeur45 {
+  width: 45%;
+}
+
+
+/*Images responsives : s'adaptent a la taille de leur parents, vous pouvez bien sur creer une classe .responsive et la distribuer aux images qui en ont besoin*/
+article img {
+  width: 100%;
+}
+
+/*------------------------
+        Backgrounds
+----------------------------*/
+.bg-nav {
+  background-color: #7E6C9F;
+  height: 100px;
+}
+
+.bg {
+    background-color: #7E6C9F;
+    height: 500px;
+  }
+  
+
+.bg-image {
+  background-image: url("");
+  padding: 96px 64px 96px 64px;
+  color: #fff;
+}
+
+
+/*------------------------------
+      Composants
+------------------------------------*/
+.bouton-taff {
+padding: 8px 16px 8px 16px;
+background-color: #483767;
+color: #fff;
+border-radius: 8px;
+margin-left: 25px;
+margin-top: 46px;
+}
+
+.bouton-cv {
+  padding: 8px 16px 8px 16px;
+  background-color: #483767;
+  color: #fff;
+  border-radius: 8px;
+  margin-top: 30px;
+  }
+  
+
+.display{
+    display: inline-block;
+}
+
+.bouton-taff:hover {
+  background-color:#271f38;
+}
+.bouton-cv:hover {
+  background-color:#271f38;
+}
+
+.card {
+  width: 25%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* Styliser le texte*/
+
+h1 {
+  font-size: 32px;
+  margin-top: 64px;
+  margin-bottom: 32px;
+}
+
+h2 {
+  margin-top: 64px;
+  margin-bottom: 32px;
+}
+.slogan {
+  font-size: 30px;
+  padding-left: 30px;
+}
+
+.accroche {
+  font-size: 30px;
+  margin-bottom: 32px;
+  padding-left: 30px;
+}
+.texte-rouge {
+  color: #E2001A;
+}
+p {
+  margin-bottom: 20px;
+}
+
+/*Nouvelle notion: le container, colone centrée sur l'ecran , permet de donner du rythme et de faciliter la lecture lorque l'on a beaucoup de texte, comme ici dans les articles (limiter la taille du texte)*/
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/*Marges*/
+.mt64 {
+  margin-top: 64px;
+}
+
+.mt32 {
+  margin-top: 32px;
+}
+
+.style-major{
+    font-family: 'Major Mono Display', monospace;
+}
+
+.style-roboto{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.box-60{
+  width: 60%;
+}
+
+.box-77{
+  width: 77%;
+}
+
+p{
+  font-family: 'Roboto Mono', monospace;
+}
+
+h2{
+  font-family: 'Major Mono Display', monospace;
+}
+
+.contour{ 
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.boite {
+  overflow:hidden;
+}
+
+.txt-gauche {
+  width:80%; 
+  float:right; 
+  display:inline
+}
+
+.contour:hover {
+  background-color:#271f38;
+  color: white;
+}
+
+hr{
+  margin-top: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
 }

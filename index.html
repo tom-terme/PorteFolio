@@ -36,7 +36,7 @@
     <p class="slogan style-roboto">Je suis Tom Terme,</p>
     <p class="slogan style-roboto box-60">Futur technicien de maintenance
     informatique et formateur numérique.</p>
-    <a class="bouton-taff display" href="">Travaillons ensemble</a>
+    <a class="bouton-taff display styled" href="#contact">Travaillons ensemble</a>
 </div>
 
 <article class="mt64 flex between align-center">
@@ -44,19 +44,19 @@
       <img src="images/technicien-informatique.jpg">
     </div>
     <div class="largeur45">
-        <h2>Présentation</h2>
+        <h2 class="font">présentation</h2>
         <p>
             Informaticien passionné depuis plus de 10 ans,<br> actuellement en formation sur le 
             campus de l'EM Lyon.<br> Dynamique, motivé et curieux, je suis en recherche constante de 
-            perfectionnement de mes compétences informatique.
+            perfectionnement de mes compétences informatiques.
           </p>
-          <a href="" class="bouton-cv display">Télechargez mon CV</a>
+          <a href="" class="bouton-cv display styled">Télechargez mon CV</a>
     </div>
   </article>
-<hr>
+<hr class="hr-haut">
 <div class="flex around">
     <div class="card">
-        <h2>Diplômes</h2>
+        <h2 class="font">diplômes</h2>
         <div class="align-center">
             <p class="contour grid boite">Année 2020</p>
             <p class="txt-gauche">BEP Éléctricité</p>
@@ -72,7 +72,7 @@
         </div>
     </div>
     <div class="card">
-        <h2>Expériences professionelles</h2>
+        <h2 class="font">expériences professionelles</h2>
         <div class="align-center">
             <p class="contour grid boite">Année ...</p>
             <p class="txt-gauche">xxx</p>
@@ -88,6 +88,89 @@
     </div>
     </div>
 </div>
-  
+
+<div class="bg-image">
+    <hr class="hr-bas">
+    <h2 class="text-align margin-bot font">réalisations (photo cliquable)</h2>
+
+    <div class="flex around">
+        <div class="text-align image">
+            <a class="a-img-txt cursor-not-allowed">
+                <img class="a-img" src="images/real1.png" alt="réal 1">
+                <span class="a-txt c2">Voir plus sur la réalisation №1</span>
+            </a>          
+        </div>
+        <div class="text-align image">
+            <a class="a-img-txt cursor-not-allowed">
+                <img class="a-img" src="images/real2.png" alt="réal 2">
+                <span class="a-txt c2">Voir plus sur la réalisation №2</span>
+            </a>          
+        </div>
+        <div class="text-align image margin-top padding-bot">
+            <a class="a-img-txt cursor-not-allowed">
+                <img class="a-img" src="images/real3.png" alt="réal 3">
+                <span class="a-txt c2">Voir plus sur la réalisation №3</span>
+            </a>          
+        </div>
+    </div>
+</div>
+<hr class="hr-bas2">
+<h2 class="text-align margin-bot font">compétences</h2>
+
+<div class="flex around padding-bot">
+
+    <div class=" image cursor-default">
+        <div class="a-img-txt" href="">
+            <img class="a-img" src="images/pc.png" alt="icone ordinateur">
+            <span class="a-txt c3">Multi-plateforme</span>
+        </div>          
+    </div>
+
+    <div class="image cursor-default">
+        <div class="a-img-txt" href="">
+            <img class="a-img" src="images/iconhtml.jpg" alt="icone dev">
+            <span class="a-txt c3">Compétence Dev Web</span>
+        </div>          
+    </div>
+
+    <div class="image cursor-default">
+        <div class="a-img-txt" href="">
+            <img class="a-img" src="images/tournevis.png" alt="icone tournevis">
+            <span class="a-txt c3">Technicien<br> informatique</span>
+        </div>          
+    </div>
+
+    <div class=" image cursor-default">
+        <div class="a-img-txt" href="">
+            <img class="a-img" src="images/poingée.png" alt="icone poignée de main">
+            <span class="a-txt c3">Super communication</span>
+        </div>          
+    </div>
+</div>
+
+<footer class="bg-noir">
+    <div id="contact"></div>
+    <h2 class="color-contact font padding-left">contact</h2>
+    <h3 class="color-contact">Un problème ? Un projet ?<br> N'hésitez plus, contactez moi.</h3>
+    <form class="padding-left2 color-contact" action="/ma-page-de-traitement" method="post">
+        <div>
+          <label for="name">Nom&nbsp;:</label>
+          <input type="text" id="name" name="user_name" />
+        <div>
+        <div>
+          <label for="mail">E-mail&nbsp;:</label>
+          <input type="email" id="mail" name="user_email" />
+        </div>
+        <div>
+          <label for="msg">Message&nbsp;:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </div>
+      
+        <div class="button">
+          <button type="submit">Envoyer votre message</button>
+        </div>
+    </form>
+<p class="copyright">© 2023, Tom Terme, Tous droits réservés</p>
+</footer>
 </body>
 </html>
